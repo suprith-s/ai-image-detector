@@ -2,28 +2,30 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-
-    border: 0px solid rgb(0, 0, 0);
-    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+    border: 0;
+    box-shadow: none; /* remove the shadow */
 }
 
 /* HEADER (WHITE SECTION) */
 .header {
-    background: rgb(255, 255, 255);
     text-align: center;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .header h2 {
-    font-family: 'Honk', system-ui;
+    font-family: 'Oswald', system-ui;
+    font-style: bold;
     font-size: 70px;
+    color: #ffffff;
     margin: 0;
 }
 
 .header p {
     font-size: 12px;
-    color: #666;
+    color: #ffffffda;
     
     animation: warningBounce 0.8s ease-in-out infinite;
 }
@@ -35,13 +37,17 @@ body {
 
 /* MAIN BACKGROUND IMAGE SECTION */
 .main-section {
-    height: calc(90vh - 80px);
-    background: url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe") no-repeat center;
+    height: 100vh; /* full viewport height */
+    width: 100vw;  /* full viewport width */
+    
+    background: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") 
+                no-repeat center center;
     background-size: cover;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0; /* remove any default body margin */
 }
 
 /* CARD */
@@ -56,7 +62,7 @@ body {
     font-family: 'jersey 25', system-ui;
     font-size: 40px;
     letter-spacing: 1px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 /* UPLOAD */
@@ -95,7 +101,7 @@ button {
 .result-box {
     margin-top: 20px;
     font-family: 'Lexend Bold', system-ui;
-    color: #000000;
+    color: #fcfcfc;
 }
 
 /* PROGRESS */
