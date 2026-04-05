@@ -1,6 +1,6 @@
+flask
 torch
 torchvision
 timm
-flask
 Pillow
 gunicorn
